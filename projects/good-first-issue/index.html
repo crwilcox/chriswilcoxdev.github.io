@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Good First Issue!</title>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function populateDropdown(){
+            $.ajax("https://raw.githubusercontent.com/bnb/good-first-issue/master/data/projects.json")
+                .then( res => {
+                    var selector = document.getElementById("project_dropdown")
+                    var js = JSON.parse(res)
+                    jQuery.each(js, function(i, val) {
+                        var option = document.createElement("option");
+                        option.text = val.name;
+                        option.value = i;
+                        selector.add(option)
+                    });
+                });
+        }
+        function getIssue(project){
+            $.ajax("https://us-central1-optimum-mode-194622.cloudfunctions.net/good-first-issue?p=" + project)
+                .then((result) => {
+                    console.log("Retrieved Issue: " + result)
+                    $("#issue_title").html(result.title);
+                    $("#issue_url").html(result.url);
+                    $("#issue_url_href").attr("href", result.url);
+                }
+            );
+        }
+    </script>
+</head>
+<body onload="populateDropdown()">
+    Select a project type:
+    <select id ="project_dropdown" onchange="getIssue(this.value);">
+        <option value="">Select a Project Type</option>
+    </select>
+    <div id="issue">
+        <h1 id="issue_title"></h1>
+        <a id=issue_url_href><h2 id="issue_url"></h2></a>
+    </div>
+</body>
+</html>
