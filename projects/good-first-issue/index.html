@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.png">
+    <meta name="Description" content="blah.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#666666" />
     <meta charset="utf-8" />
     <title>Good First Issue!</title>
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-        function populateDropdown(){
+        function populateDropdown() {
             $.ajax("https://raw.githubusercontent.com/bnb/good-first-issue/master/data/projects.json")
-                .then( res => {
+                .then(res => {
                     var selector = document.getElementById("project_dropdown")
                     var js = JSON.parse(res)
-                    jQuery.each(js, function(i, val) {
+                    jQuery.each(js, function (i, val) {
                         var option = document.createElement("option");
                         option.text = val.name;
                         option.value = i;
@@ -18,7 +24,7 @@
                     });
                 });
         }
-        function getIssue(project){
+        function getIssue(project) {
             $.ajax("https://us-central1-optimum-mode-194622.cloudfunctions.net/good-first-issue?p=" + project)
                 .then((result) => {
                     console.log("Retrieved Issue: " + result)
@@ -26,21 +32,36 @@
                     $("#issue_url").html(result.url);
                     $("#issue_url_href").attr("href", result.url);
                 }
-            );
+                );
         }
     </script>
 </head>
+
 <body onload="populateDropdown()">
-    Get the module at <a href="https://www.npmjs.com/package/good-first-issue">https://www.npmjs.com/package/good-first-issue</a>
-    <br /> 
-    
-    Select a project type:
-    <select id ="project_dropdown" onchange="getIssue(this.value);">
-        <option value="">Select a Project Type</option>
-    </select>
-    <div id="issue">
-        <h1 id="issue_title"></h1>
-        <a id=issue_url_href><h2 id="issue_url"></h2></a>
+    <header>Find your first GitHub issue.</header>
+    <div>
+        Get the node module at <a href="https://www.npmjs.com/package/good-first-issue">https://www.npmjs.com/package/good-first-issue</a>
     </div>
+    <main>
+        Select a project type:
+        <select id="project_dropdown" onchange="getIssue(this.value);">
+            <option value="">Select a Project Type</option>
+        </select>
+        <div id="issue">
+            <h1 id="issue_title"></h1>
+            <a id=issue_url_href>
+                <h2 id="issue_url"></h2>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://github.com/crwilcox">@github</a> |
+            <a href="https://twitter.com/chriswilcox47">@chriswilcox47</a>
+        </div>
+        <div>Hosted on Google Cloud</div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
