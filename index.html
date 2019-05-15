@@ -5,139 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page - crwilcox.com</title>
     
-    <link rel="stylesheet" type="text/css" href="./static//bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" type="text/css" href="./static/site.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="/static/app/scripts/modernizr-2.6.2.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
-<body style="">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="http://crwilcox.com/" class="navbar-brand">Chris Wilcox</a>
+<body>
+    <div class="content-wrapper">
+        <div class="body-section hero">
+            <div class="hero-content">
+                <div class="image-carousel-wrapper">
+                    <div class="image-carousel">
+                        <div class="image-slide"><img src="./static/carousel_photos/2016_WMRRA_Round1-1.jpg"></div> 
+                        <div class="image-slide"><img src="./static/carousel_photos/2016_WMRRA_Round1-2.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/2016_Race_Bike.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/headshot.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/2013_pacific_raceways.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/2015_omrra_nrs_pir.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/2015_wmrra_rnd1.jpg"></div> 
+                        <div class="image-slide"><img src="./static/carousel_photos/20150417-NRS.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/20150628-Ridge-Straight.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/PIR-Chasing.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/20150628-Pit.jpg"></div>  
+                        <div class="image-slide"><img src="./static/carousel_photos/20150531-Dirt.jpg"></div>  
+                    </div>
+                </div>
+
+                <div class="hero-text">
+                    <h2>Christopher Wilcox</h2>
+                    <h4>Developer.  Googler.  Racer.</h4>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/chriswilcox47" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/crwilcox" title="Github"><i class="fab fa-github-square"></i></a>
+                        <a href="https://www.linkedin.com/in/chrisrwilcox" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/wilcoxc" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/chupapuma/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/ChupaPuma" title="YouTube"><i class="fab fa-youtube-square"></i></a>
+                        <a href="https://chriswilcox.racing" title="Racing"><i class="fa fa-motorcycle"></i></a>
+                    </div>
+                    <a class="resume-button" href="http://crwilcox.com/static/resume.pdf">Resume</a>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="http://crwilcox.com/">Home</a></li>
-                    <li><a href="http://chriswilcox.racing">Racing</a></li>
-                    <!-- <li><a href="http://crwilcox.com/projects">Projects</a></li> -->
-                    <li><a href="http://crwilcox.com/static/resume.pdf">Resume</a></li>
-                    <li><a href="http://crwilcox.com/about">About Me</a></li>
-                    <li><a href="http://crwilcox.com/speaking">Speaking</a></li>
-                </ul>
+        </div>
+        
+        <div class="body-section about">
+            <div class="about-panel">
+                <div class="about-panel-text">
+                    <h2>About.</h2>
+                    <p>
+                        Chris is a developer at Google in Seattle, WA, USA and works on the Google Cloud Platform 
+                        Client Libraries team, focusing on dynamic languages and their users. Before joining Google, 
+                        Chris spent 6 years working on compilers, cloud platforms, and developer tooling for Microsoft. 
+                        He brings a passion for enabling developers everywhere through better tools and libraries. In his 
+                        spare time you can find Chris running or cycling nowhere in particular or riding his motorcycle.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-panel">
+                <div class="about-panel-text">
+                    <h2>Speaking.</h2>
+                    <ul>
+                        <li>
+                            <h4>PyCon - May 4, 2019</h4>
+                            <a href="https://www.youtube.com/watch?v=P3dY3uDmnkU">Shipping Your First Python Package and Automating Future Publishing</a>  
+                        </li>
+
+                        <li>
+                            <h4>Google Cloud Next - April 11, 2019</h4>
+                            <a href="https://www.youtube.com/watch?v=Bye7Rms0Vgw&list=PLbChO8UMcgr75KoZaD0o9K6giVb-GbUpT&index=7&t=239s">Python 2 to 3: Migrations and Motivators</a>
+                        </li>
+
+                        <li>
+                            <h4>JupyterCon - November 2017</h4>
+                            <a href="https://www.youtube.com/watch?v=kZOmV_kvEYU">Hosting Jupyter at Scale</a>
+                        </li>
+
+                        <li>
+                            <h4>PyData Seattle - August 2015</h4>
+                            <a href="https://www.youtube.com/watch?v=PElcaj1iylA">Using Python and Azure Machine Learning</a>
+                        </li>
+
+                        <li>
+                            <h4>PyCon - April 2015</h4>
+                            <a href="https://us.pycon.org/2015/schedule/presentation/471/">Workshop: Using Microsoft Azure with Python and enjoying it</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-panel">
+                <div class="about-panel-text">
+                    <h2>Podcasts, etc.</h2>
+                    <ul>
+                        <li>
+                            <h4>Podcast - December 2016</h4>
+                            <a href="https://www.youtube.com/watch?v=NglZQAEnlQY">MS Dev Show: Azure Notebooks</a>
+                        </li>
+
+                        <li>
+                            <h4>Video Tutorial - November 2016</h4>
+                            <a href="https://www.youtube.com/watch?v=aJkPWondiHk">Welcome to Azure Notebooks</a>
+                        </li>
+
+                        <li>
+                            <h4>Video Tutorial - April 2015</h4>
+                            <a href="https://www.youtube.com/watch?v=y1Qq7BrV6Cc">Cross-platform remote debugging in Python and C++</a>
+                        </li>  
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container body-content">
-
-
-
-
-<!-- Begin Image Carousel -->
-<div class="row">
-    <div class="col-md-offset-3 col-md-6">
-        <div class="carousel slide" id="carousel" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li class="" data-target="#carousel" data-slide-to="0"></li>
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-              <li data-target="#carousel" data-slide-to="2"></li>
-              <li data-target="#carousel" data-slide-to="3"></li>
-              <li data-target="#carousel" data-slide-to="4"></li>
-              <li data-target="#carousel" data-slide-to="5"></li>
-              <li data-target="#carousel" data-slide-to="6"></li>
-              <li data-target="#carousel" data-slide-to="7"></li>
-              <li data-target="#carousel" data-slide-to="8"></li>
-              <li data-target="#carousel" data-slide-to="9"></li>
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-				<div class="item active"><img src="./static/carousel_photos/2016_WMRRA_Round1-1.jpg"></div> 
-				<div class="item"><img src="./static/carousel_photos/2016_WMRRA_Round1-2.jpg"></div>  
-				<div class="item"><img src="./static/carousel_photos/2016_Race_Bike.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/headshot.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/2013_pacific_raceways.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/2015_omrra_nrs_pir.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/2015_wmrra_rnd1.jpg"></div> 
-                <div class="item"><img src="./static/carousel_photos/20150417-NRS.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/20150628-Ridge-Straight.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/PIR-Chasing.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/20150628-Pit.jpg"></div>  
-                <div class="item"><img src="./static/carousel_photos/20150531-Dirt.jpg"></div>  
-            </div>  
-        </div>
-        <a class="left carousel-control" role="button" href="http://crwilcox.com/#carousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" role="button" href="http://crwilcox.com/#carousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-<!-- End Image Carousel -->
-
-
-<div class="row">
-        <br><br>
-        <p>
-                Chris is a developer at Google in Seattle, WA, USA and works on the
-                Google Cloud Platform Client Libraries team, focusing on dynamic languages
-                and their users. Before joining Google, Chris spent 6 years at Microsoft
-                working on compilers, cloud platforms, and developer tooling. He brings a
-                passion for enabling developers everywhere through better tools and libraries.
-        </p>
-        <p>
-            In his spare time, Chris participates in a variety of hobbies:
-            </p><li>Motorcycle Racing</li>
-            <li>Bicycling</li>
-            <li>Running</li>
-            <li>Hiking</li>
-            <li>Video Games</li>
-            <li>Electronic Tinkering</li>
-        <p></p>
-        <p>
-            For more information, Please view my <a href="http://crwilcox.com/static/resume.pdf">Resume</a>
-        </p>
-</div>
-
-
-        <hr>
-        <footer>
-            <!-- Social Networks -->
-            <a href="https://www.facebook.com/wilcoxc" title="Facebook" style="color:#333"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="https://twitter.com/chupapuma" title="Twitter" style="color:#333"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="https://plus.google.com/100746515534046664491/posts" title="Google Plus" style="color:#333"><i class="fa fa-google-plus-square fa-3x"></i></a>
-
-            <!-- Media -->
-            <a href="https://www.instagram.com/chupapuma/" title="Instagram" style="color:#333"><i class="fa fa-instagram fa-3x"></i></a>
-            <a href="https://www.flickr.com/photos/christopherwilcox" title="Flickr" style="color:#333"><i class="fa fa-flickr fa-3x"></i></a>
-            <a href="https://www.youtube.com/user/ChupaPuma" title="YouTube" style="color:#333"><i class="fa fa-youtube-square fa-3x"></i></a>
-
-            <!-- Racing -->
-            <a href="http://www.hookit.com/members/christopherwilcox/" title="Hookit" style="color:#333"><i class="fa fa-h-square fa-3x"></i></a>
-
-            <!-- Professional -->
-            <a href="https://github.com/crwilcox" title="Github" style="color:#333"><i class="fa fa-github-square fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/chrisrwilcox" title="LinkedIn" style="color:#333"><i class="fa fa-linkedin-square fa-3x"></i></a>
-
-            <p>© 2019 - Chris Wilcox</p>
-        </footer>
-    </div>
-
-    <script src="./static/jquery-1.10.2.js"></script>
-    <script src="./static/bootstrap.js"></script>
-    <script src="./static/respond.js"></script>
-
-
-
-
-</body></html>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./static/home.js"></script>
+</body>
+</html>
