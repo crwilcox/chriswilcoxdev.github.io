@@ -172,15 +172,21 @@ a {
     .body-section.hero {
         position: relative;
         height: auto;
-        padding: 30px;
+        padding: 30px 30px 40px;
     }
 
-    .hero-content {
+    .hero-content,
+    .hero-footer {
         width: 100%;
     }
 
+    .hero-footer,
     .hero-text {
         text-align: center;
+    }
+
+    .hero-footer {
+       bottom: 10px;
     }
 
     .social-icons {
@@ -189,5 +195,11 @@ a {
 
     .body-section.about {
         margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .body-section.hero {
+        min-height: 700px;
     }
 }
