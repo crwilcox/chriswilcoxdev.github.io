@@ -60,8 +60,15 @@ a {
     color: #22333b;
 }
 
-.hero-content {
+.hero-content,
+.hero-footer {
     width: 80%;
+}
+
+.hero-footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
 }
 
 .image-carousel-wrapper {
