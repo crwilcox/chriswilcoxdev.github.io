@@ -1,5 +1,12 @@
 
 $(document).ready(function() {
   // set up slide carousel
-  $(".image-carousel").slick({ infinite: true, autoplay: true, autoplaySpeed: 2500 });
+  var carousel = $(".image-carousel");
+
+  $(".image-carousel").on("init", function() { 
+    carousel.fadeIn("slow");
+  });
+
+  carousel.slick({ infinite: true, autoplay: true, autoplaySpeed: 2500, fade: true });
+
 });

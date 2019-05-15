@@ -75,6 +75,11 @@ a {
     margin-bottom: 25px;
 }
 
+.image-carousel,
+.slick-slider {
+    display: none;
+}
+
 .image-carousel {
     overflow: hidden;
 }
