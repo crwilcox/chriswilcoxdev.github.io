@@ -1,5 +1,8 @@
+---
+---
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,6 +65,19 @@
                         He brings a passion for enabling developers everywhere through better tools and libraries. In his 
                         spare time you can find Chris running or cycling nowhere in particular or riding his motorcycle.
                     </p>
+                </div>
+            </div>
+
+            <div class="about-panel">
+                <div class="about-panel-text">
+                    <h2>Writing.</h2>
+                    <ul>
+                        {% for post in site.posts %}
+                          <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
                 </div>
             </div>
 
