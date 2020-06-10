@@ -15,25 +15,38 @@
 # in the templates via {{ site.myvariable }}.
 title: Chris Wilcox
 description: >- # this means to ignore newlines until "baseurl:"
-  Chris is a developer at Google in Seattle, WA, USA working on
+  Chris is a developer at Google in
+  Seattle, WA, USA working on
   client libraries for Google Cloud.
+  Also <a href="https://chriswilcox.racing">races motorcycles</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chriswilcox.dev" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: "UA-169201983-1"
 
-# Social
-twitter_username: chriswilcox47
-github_username: chriswilcox
-linkedin_username: chrisrwilcox
+minima:
+  # generate social links in footer
+  social_links:
+    twitter: chriswilcox47
+    github: crwilcox
+    devto: crwilcox
+    instagram: jekyll
+    linkedin: chrisrwilcox
+    # youtube_channel: UCYJEkbsuP8WC54eWoSkw3FQ
+    rss: rss
+    # Available: dribbble, facebook flickr, pinterest, telegram,
+    # googleplus, microdotblog, keybase, youtube, youtube_channel_name
+    # gitlab, mastadon
 
 # Build settings
 markdown: kramdown
 theme: minima
+remote_theme: jekyll/minima
+
 plugins:
   - jekyll-feed
 
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -46,3 +59,4 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
