@@ -45,7 +45,7 @@ Our goal with the reference server was to provide a starting point for health au
 The current exposure notification server publish protocol doesn’t authenticate requests. To ensure the request came from an individual that has been exposed, a verification server should be used to certify that the diagnosis is from a public health authority in the jurisdiction. While we haven’t published a reference for the verification test, a design and protocol can be found in the GitHub repository.
 
 #### Deploying Secret Management
-While the TEKs are anonymised, secrets are still required to operate an exposure service, such as to control database access, provide authorization credentials, and manage private keys for signing download content.
+While the TEKs are anonymized, secrets are still required to operate an exposure service, such as to control database access, provide authorization credentials, and manage private keys for signing download content.
 
 This isn’t required but is strongly recommended. By default we leverage Google Cloud Secret Manager. The reference server includes implementations for additional secret management systems.
 
