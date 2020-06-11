@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A look at the open source Exposure Notification reference server"
+title:  "A Look at the Open Source Exposure Notification Reference Server"
 date:   2020-06-10 09:00 -0700
 categories: blog
 ---
