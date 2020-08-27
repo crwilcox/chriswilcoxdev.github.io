@@ -7,25 +7,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page - Chris Wilcox</title>
-    
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./static/site.css" />
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"></head>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+</head>
 </head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'GA_MEASUREMENT_ID');
 </script>
 
 <body>
@@ -50,14 +53,19 @@
 
                 <div class="hero-text">
                     <h2>Christopher Wilcox</h2>
-                    <h4>Developer.  Googler.  Racer.</h4>
+                    <h4>Developer. Googler. Racer.</h4>
                     <div class="social-icons">
-                        <a href="https://twitter.com/chriswilcox47" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://twitter.com/chriswilcox47" title="Twitter"><i
+                                class="fab fa-twitter-square"></i></a>
                         <a href="https://github.com/crwilcox" title="Github"><i class="fab fa-github-square"></i></a>
-                        <a href="https://www.linkedin.com/in/chrisrwilcox" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/wilcoxc" title="Facebook"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/chupapuma/" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/user/ChupaPuma" title="YouTube"><i class="fab fa-youtube-square"></i></a>
+                        <a href="https://www.linkedin.com/in/chrisrwilcox" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/wilcoxc" title="Facebook"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/chupapuma/" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/user/ChupaPuma" title="YouTube"><i
+                                class="fab fa-youtube-square"></i></a>
                         <a href="https://chriswilcox.racing" title="Racing"><i class="fa fa-motorcycle"></i></a>
                     </div>
                     <a class="resume-button" href="http://crwilcox.com/static/resume.pdf">Resume</a>
@@ -66,16 +74,17 @@
 
             <div class="hero-footer">&copy; 2019 - Christopher Wilcox</div>
         </div>
-        
+
         <div class="body-section about">
             <div class="about-panel">
                 <div class="about-panel-text">
                     <h2>About.</h2>
                     <p>
-                        Chris is a developer at Google in Seattle, WA, USA and works on the Google Cloud Platform 
-                        Client Libraries team, focusing on dynamic languages and their users. Before joining Google, 
-                        Chris spent 6 years working on compilers, cloud platforms, and developer tooling for Microsoft. 
-                        He brings a passion for enabling developers everywhere through better tools and libraries. In his 
+                        Chris is a developer at Google in Seattle, WA, USA and works on the Google Cloud Platform
+                        Client Libraries team, focusing on dynamic languages and their users. Before joining Google,
+                        Chris worked on compilers, cloud platforms, and developer tooling for Microsoft.
+                        He brings a passion for enabling developers everywhere through better tools and libraries. In
+                        his
                         spare time you can find Chris running or cycling nowhere in particular or riding his motorcycle.
                     </p>
                 </div>
@@ -86,15 +95,15 @@
                     <h2>Writing.</h2>
                     <ul>
                         {% for post in site.posts %}
-                          <li>
+                        <li>
                             <a href="{{ post.url }}">{{ post.title }}</a>
-                          </li>
+                        </li>
                         {% endfor %}
 
                         <li>
                             <a href="/blog">View All Posts...</a>
                         </li>
-                      </ul>
+                    </ul>
 
                 </div>
             </div>
@@ -114,38 +123,49 @@
                         </li>
                         <li>
                             <h4>North Bay Python 2019 - November 2, 2019</h4>
-                            <a href="https://www.youtube.com/watch?v=C_nywn1aR44">The Blameless Post Mortem: How Embracing Failure Makes Us Better</a>
-                            (<a href="https://speakerdeck.com/crwilcox/the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
+                            <a href="https://www.youtube.com/watch?v=C_nywn1aR44">The Blameless Post Mortem: How
+                                Embracing Failure Makes Us Better</a>
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
                         </li>
                         <li>
                             <h4>PyGotham 2019 - October 5, 2019</h4>
                             The Blameless Post Mortem: How Embracing Failure Makes Us Better
-                            (<a href="https://speakerdeck.com/crwilcox/pygotham-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/pygotham-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
                         </li>
                         <li>
                             <h4>DjangoCon US 2019 - September 24, 2019</h4>
                             The Blameless Post Mortem: How Embracing Failure Makes Us Better
-                            (<a href="https://speakerdeck.com/crwilcox/djangocon-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/djangocon-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
                         </li>
                         <li>
                             <h4>PyCon AU - August 4, 2019</h4>
-                            <a href="https://www.youtube.com/watch?v=nietrteetKQ">Shipping Your First Python Package and Automating Future Publishing, Australia Edition</a>
-                            (<a href="https://speakerdeck.com/crwilcox/pycon-au-2019-shipping-your-first-python-package-and-automating-future-publishing">Slides</a>)
+                            <a href="https://www.youtube.com/watch?v=nietrteetKQ">Shipping Your First Python Package and
+                                Automating Future Publishing, Australia Edition</a>
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/pycon-au-2019-shipping-your-first-python-package-and-automating-future-publishing">Slides</a>)
                         </li>
                         <li>
                             <h4>PyOhio - July 27, 2019</h4>
                             The Blameless Post Mortem: How Embracing Failure Makes Us better
-                            (<a href="https://speakerdeck.com/crwilcox/pyohio-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/pyohio-2019-the-blameless-post-mortem-how-embracing-failure-makes-us-better">Slides</a>)
                         </li>
                         <li>
                             <h4>PyCon - May 4, 2019</h4>
-                            <a href="https://www.youtube.com/watch?v=P3dY3uDmnkU">Shipping Your First Python Package and Automating Future Publishing</a>  
-                            (<a href="https://speakerdeck.com/crwilcox/pycon-2019-shipping-your-first-python-package-and-automating-future-publishing">Slides</a>)
+                            <a href="https://www.youtube.com/watch?v=P3dY3uDmnkU">Shipping Your First Python Package and
+                                Automating Future Publishing</a>
+                            (<a
+                                href="https://speakerdeck.com/crwilcox/pycon-2019-shipping-your-first-python-package-and-automating-future-publishing">Slides</a>)
                         </li>
 
                         <li>
                             <h4>Google Cloud Next - April 11, 2019</h4>
-                            <a href="https://www.youtube.com/watch?v=Bye7Rms0Vgw&list=PLbChO8UMcgr75KoZaD0o9K6giVb-GbUpT&index=7">Python 2 to 3: Migrations and Motivators</a>
+                            <a
+                                href="https://www.youtube.com/watch?v=Bye7Rms0Vgw&list=PLbChO8UMcgr75KoZaD0o9K6giVb-GbUpT&index=7">Python
+                                2 to 3: Migrations and Motivators</a>
                         </li>
 
                         <li>
@@ -155,12 +175,14 @@
 
                         <li>
                             <h4>PyData Seattle - August 2015</h4>
-                            <a href="https://www.youtube.com/watch?v=PElcaj1iylA">Using Python and Azure Machine Learning</a>
+                            <a href="https://www.youtube.com/watch?v=PElcaj1iylA">Using Python and Azure Machine
+                                Learning</a>
                         </li>
 
                         <li>
                             <h4>PyCon - April 2015</h4>
-                            <a href="https://us.pycon.org/2015/schedule/presentation/471/">Workshop: Using Microsoft Azure with Python and enjoying it</a>
+                            <a href="https://us.pycon.org/2015/schedule/presentation/471/">Workshop: Using Microsoft
+                                Azure with Python and enjoying it</a>
                         </li>
                     </ul>
                 </div>
@@ -170,6 +192,11 @@
                 <div class="about-panel-text">
                     <h2>Podcasts, etc.</h2>
                     <ul>
+                        <li>
+                            <h4>Podcast - December 2019</h4>
+                            <a href="https://changelog.com/jsparty/109">JS Party #109: These talks are all quite
+                                attractive</a>
+                        </li>
                         <li>
                             <h4>Podcast - December 2016</h4>
                             <a href="https://www.youtube.com/watch?v=NglZQAEnlQY">MS Dev Show: Azure Notebooks</a>
@@ -182,8 +209,9 @@
 
                         <li>
                             <h4>Video Tutorial - April 2015</h4>
-                            <a href="https://www.youtube.com/watch?v=y1Qq7BrV6Cc">Cross-platform remote debugging in Python and C++</a>
-                        </li>  
+                            <a href="https://www.youtube.com/watch?v=y1Qq7BrV6Cc">Cross-platform remote debugging in
+                                Python and C++</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -194,4 +222,5 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./static/home.js"></script>
 </body>
+
 </html>
