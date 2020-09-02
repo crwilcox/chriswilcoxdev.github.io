@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Diving into GitHub with BigQuery and Python"
-date:   2020-09-02 09:00 -0700
+date:   2020-09-02 10:00 -0700
 categories: blog
 ---
 
 <img
-  src="/images/cloud_github_python_adds_to.png" 
+  src="https://chriswilcox.dev/images/cloud_github_python_adds_to.png" 
   alt="Google Cloud + GitHub + Python = ?"
   height=128>
     
@@ -22,7 +22,7 @@ I like to use the [BigQuery Python libraries](https://pypi.org/project/google-cl
 !pip install google-cloud-bigquery
 ```
 
-Once the library is installed interacting with BigQuery and making requests is familar to most Pythonistas. For this work I find I usually use [colab](https://colab.research.google.com/), or a local [Jupyter](https://jupyter.org/) Notebook. I find that I can query and then easily dive in, filtering the data locally, and discover more in the data.
+Once the library is installed interacting with BigQuery and making requests is familiar to most Pythonistas. For this work I find I usually use [colab](https://colab.research.google.com/), or a local [Jupyter](https://jupyter.org/) Notebook. I find that I can query and then easily dive in, filtering the data locally, and discover more in the data.
 
 If you'd like you can follow along with the [Jupyter Notebook I used to create this post](/downloadable-content/diving_into_your_stats_with_GitHub_and_BigQuery.ipynb).
 
@@ -80,7 +80,7 @@ GROUP BY type, status ORDER BY type, status;
 """
 ```
 
-## An aside on cost and esimating query size
+## An aside on cost and estimating query size
 While 1 TB of querying is included in the free tier, many datasets in BigQuery are large, and it can be easy to exhaust that. There is a way in the library to test-run first to estimate the size of the query. It is wise to dry-run queries to consider the efficiency as well as the cost of execution. For instance, if I try to execute this query over the last 2.5 years, the query size is over 3 TB, whereas the last month is around 223 GB.
 
 
