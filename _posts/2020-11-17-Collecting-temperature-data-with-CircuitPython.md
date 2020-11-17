@@ -55,10 +55,11 @@ data. Though there are a few further things I would like to accomplish for my
 particular use case.
 
 1. I am going to want to track temperature over a few days. So, once a second
-   is way too often. Instead, let's get the updates every minute.
+   is way too often. Instead, I'll get the updates every minute.
 2. It would be nice if the board communicated its state a bit. For instance if
-   an error is encountered, or what temperature the sensor is reporting. So
-   let's configure the NeoPixel LEDs to display different patterns to indicate different states.
+   an error is encountered, or what temperature the sensor is reporting. So I
+   want to configure the NeoPixel LEDs to display different patterns to
+   indicate different states.
 3. I don't want to have to leave the board plugged into a computer. I'd like to
    be able to leave it alone just powered, and collect the data later.
 4. While the temperature reported is reasonable, it is a bit higher than my
