@@ -68,7 +68,7 @@ particular use case.
 
 ## Reporting board status via LEDs
 <img
-  src={{ "/images/2020-11-17-temperature-data-with-circuitpython/not_write_blink.gif" | absolute_url }}
+  src="{{ /images/2020-11-17-temperature-data-with-circuitpython/not_write_blink.gif | absolute_url }}"
   alt="Blinky lights on Circuit Playground FTW">
 
 One of the difficulties of using a microcontroller can be the lack of a console
