@@ -183,4 +183,3 @@ for n in notifications_to_mark:
 While I am constantly evolving my approach to working across a variety of open source projects, I have found this system to work well for me and help to keep the value of notifications high and above the noise line.
 
 Have thoughts on my approach or want to share your approach with me? Feel free to reach out on [twitter](https://twitter.com/chriswilcox47).
-bun
