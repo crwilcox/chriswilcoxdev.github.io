@@ -375,6 +375,5 @@ pip install functions_framework
 functions-framework --target mark_read
 ```
 
-For a more in depth look at this you can read more in
-[this post](https://dev.to/googlecloud/portable-cloud-functions-with-the-python-functions-framework-a6a)
+For a more in depth look at this you can read more in [this post](https://dev.to/googlecloud/portable-cloud-functions-with-the-python-functions-framework-a6a)
 by [Dustin Ingram](https://twitter.com/di_codes).
