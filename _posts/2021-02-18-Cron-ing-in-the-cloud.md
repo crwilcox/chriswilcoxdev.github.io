@@ -7,7 +7,7 @@ categories: blog
 
 ![Cloud Scheduler triggered Cloud Functions](/images/2021-02-18-cron-ing-in-the-cloud/scheduler_functions.png)
 
-Last week I wrote about [taming my github notifications](https://chriswilcox.dev/blog/2021/02/10/How-I-tamed-my-GitHub-notifications.html) and I thought I would follow that post up
+Last week I wrote about [taming my GitHub notifications](https://chriswilcox.dev/blog/2021/02/10/How-I-tamed-my-GitHub-notifications.html) and I thought I would follow that post up
 by talking about automating the automation - or - how I use the cloud as my own
 personal computer :)
 
@@ -235,7 +235,6 @@ def mark_read(request):
     response = f"Marked {len(notifications_to_mark)} read across {len(unique_repos)} repositories"
     print(response)
     return response
-
 ```
 
 
