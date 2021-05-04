@@ -85,7 +85,7 @@ googleapis/python-crc32c: 3
 Also, if you don’t care about a count breakdown of your notifications, you can always view 
 https://github.com/watching to get a breakdown of the repositories you watch. Note this won’t show things you are notified for due to a team so the list may be incomplete.
 
- ## Step 3: Tease out what is really important
+## Step 3: Tease out what is really important
 
 Now that we have a list of repositories we are getting alerts from, we can start to separate out the types of projects we are involved in and which ones are making it hard to find the important notifications. You can start to see if there are repositories that are particularly noisy and of low-signal for you personally.
 
