@@ -23,8 +23,10 @@ Google Cloud Python Libraries: [Google Cloud Storage](https://github.com/googlea
 
 [Objectify](https://github.com/objectify/objectify), Datastore connector for Java users
 
-[https://github.com/urllib3/urllib3](https://github.com/urllib3/urllib3)
+[urllib3](https://github.com/urllib3/urllib3), popular http library for Python
 
-[https://github.com/python/cpython](https://github.com/python/cpython)
+[CPython](https://github.com/python/cpython), the most popular Python
+distribution, get it at [https://python.org](https://python.org).
 
-[https://github.com/microsoft/AzureFilesFUSE](https://github.com/microsoft/AzureFilesFUSE)
+[AzureFilesFUSE](https://github.com/microsoft/AzureFilesFUSE), a FUSE driver
+for Azure File storage, written in Python.
