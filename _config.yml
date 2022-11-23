@@ -39,13 +39,13 @@ minima:
 # Build settings
 markdown: kramdown
 theme: minima
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
 
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
