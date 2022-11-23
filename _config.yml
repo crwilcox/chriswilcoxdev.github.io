@@ -17,7 +17,7 @@ title: Chris Wilcox
 description: >- # this means to ignore newlines until "baseurl:"
   Chris is a developer at Google in
   Seattle, WA, USA working on
-  client libraries for Google Cloud.
+  Hybrid Connectivity, Google Cloud + Proprietary Stack, for Google.
   Also <a href="https://chriswilcox.racing">races motorcycles</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chriswilcox.dev" # the base hostname & protocol for your site, e.g. http://example.com

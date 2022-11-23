@@ -90,12 +90,12 @@ Let't start by authoring a simple benchmark. Becnhmarks can be included in
 `*_test.go` files.
 
 ```go
-// testList is a []int with 1500 elements.
-var testList []string
+// data is a []int with 1500 elements.
+var data []string
 
 func BenchmarkConvert(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		Convert(testList)
+		Convert(data)
 	}
 }
 ```
@@ -170,29 +170,29 @@ In fact it is the least fast version. But how do the other two options compare?
 Here is the full benchmark test:
 
 ```go
-var testList []string
+var data []string
 
 func init() {
 	for i := 0; i < 1500; i++ {
-		testList = append(testList, fmt.Sprint(i))
+		data = append(data, fmt.Sprint(i))
 	}
 }
 
 func BenchmarkConvert(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		Convert(testList)
+		Convert(data)
 	}
 }
 
 func BenchmarkConvertWithCapacity(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		ConvertWithCapacity(testList)
+		ConvertWithCapacity(data)
 	}
 }
 
 func BenchmarkConvertWithSize(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		ConvertWithSize(testList)
+		ConvertWithSize(data)
 	}
 }
 ```
