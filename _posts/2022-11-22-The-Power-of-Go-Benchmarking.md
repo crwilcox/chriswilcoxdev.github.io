@@ -18,7 +18,7 @@ conversations on my team.
 One of the areas I covered were some lesser used features of go slices.
 One of the code fragments introduces `make`, with an *additional* argument.
 
-```
+```go
 package main
 
 import "fmt"
@@ -40,7 +40,7 @@ Our service needed to call another that takes a slice of ints (`[]int`).
 Unfortunately our code stores that data as `[]string`, so we'd need to convert.
 No matter, it is rather straightforward to do so:
 
-```
+```go
 // Given a slice of strings, convert to a slice of ints.
 func Convert(src []string) []int {
 	var dst []int
@@ -89,7 +89,7 @@ benchmarking comes in.
 Let't start by authoring a simple benchmark. Becnhmarks can be included in
 `*_test.go` files.
 
-```
+```go
 // testList is a []int with 1500 elements.
 var testList []string
 
@@ -136,7 +136,7 @@ optimation either by:
 Now that we know about benchmarking, let's use it to compare these comparable,
 but different, ways of converting a string slice to an int slice.
 
-```
+```go
 // Given a slice of strings, convert to a slice of ints. Use append, but
 // preallocate the capacity of the destination list to match the length of
 // the source list.
@@ -169,7 +169,7 @@ In fact it is the least fast version. But how do the other two options compare?
 <!-- 
 Here is the full benchmark test:
 
-```
+```go
 var testList []string
 
 func init() {
@@ -199,7 +199,7 @@ func BenchmarkConvertWithSize(b *testing.B) {
 -->
 
 
-```
+```sh
 ❯ go test -benchmem -bench .
 goos: darwin
 goarch: arm64
