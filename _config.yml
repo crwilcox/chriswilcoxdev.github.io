@@ -32,6 +32,10 @@ minima:
     linkedin: chrisrwilcox
     youtube_channel: UCYJEkbsuP8WC54eWoSkw3FQ
     rss: rss
+    mastodon:
+      instance: hachyderm.io
+      username: chriswilcox
+    
     # Available: dribbble, facebook flickr, instagram, pinterest, telegram,
     # googleplus, microdotblog, keybase, youtube, youtube_channel_name
     # gitlab, mastadon
