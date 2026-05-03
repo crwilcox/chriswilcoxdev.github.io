@@ -85,8 +85,11 @@ a {
 }
 
 .image-slide img {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 400px;
+    margin: auto;
+    display: block;
 }
 
 .social-icons {
