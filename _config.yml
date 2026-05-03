@@ -26,7 +26,8 @@ google_analytics: "UA-169201983-1"
 minima:
   # generate social links in footer
   social_links:
-    twitter: chriswilcox47
+    bluesky: chriswilcox.dev
+    # twitter: chriswilcox47
     github: crwilcox
     devto: crwilcox
     linkedin: chrisrwilcox
