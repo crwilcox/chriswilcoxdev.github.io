@@ -36,7 +36,8 @@ minima:
     mastodon:
       instance: hachyderm.io
       username: chriswilcox
-    
+    instagram: chupapuma
+    facebook: wilcoxc
     # Available: dribbble, facebook flickr, instagram, pinterest, telegram,
     # googleplus, microdotblog, keybase, youtube, youtube_channel_name
     # gitlab, mastadon
